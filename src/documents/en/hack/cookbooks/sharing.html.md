@@ -79,7 +79,7 @@ the following information:
 var sharing = {
     desc: "Hey Bob this is my picture from my last holidays!",
     targets: [
-        { url: "bob.hiscozycloud.com" }
+        { recipientUrl: "bob.hiscozycloud.com" }
     ],
     rules: [
         { id: 1, docType: "picture" }
@@ -177,8 +177,8 @@ var sharing = {
         { id: 2, docType: "event" }
     ],
     targets: [
-        { url: "bob.hiscozycloud.com", token: "token1", repID: "rep1" },
-        { url: "charles.cozy.hk", token: "token2", repID: "rep2" }
+        { recipientUrl: "bob.hiscozycloud.com", token: "token1", repID: "rep1" },
+        { recipientUrl: "charles.cozy.hk", token: "token2", repID: "rep2" }
     ],
     continuous: true
 };
@@ -210,8 +210,8 @@ resembles this:
 var sharing = {
     desc: "A description of the documents",
     targets: [
-        { url: "bob.hiscozycloud.com" },
-        { url: "charles.cozy.hk" }
+        { recipientUrl: "bob.hiscozycloud.com" },
+        { recipientUrl: "charles.cozy.hk" }
     ],
     rules: [
         { id: 1, docType: "picture" },
@@ -250,7 +250,7 @@ var request = {
     ],
     continuous: true,
     target: {
-        url: "alice.cozycloud.com",
+        recipientUrl: "alice.cozycloud.com",
         preToken: "preToken_of_alice"
    }
 };
